@@ -22,7 +22,7 @@ namespace AquiMix
             Papaslbl.Text = CPapas.ToString();
             ChileTocinolbl.Text = CChile.ToString();
             Sodalbl.Text = CSoda.ToString();
-            Totaltbx.Text = "";
+            Totaltbx.Text = "100";
         }
 
         //variables
@@ -170,8 +170,17 @@ namespace AquiMix
 
         private void Pagarbtn_Click(object sender, EventArgs e)
         {
-            Cobro cobro = new Cobro();
-            cobro.Show();
+            int a = Convert.ToInt32(Totaltbx.Text);
+            int b = Convert.ToInt32(tbxEfectivo.Text);
+            if (a >= b)
+            {
+                int c = a - b;
+                MessageBox.Show("Su Cambio fue de " + c.ToString(), "Compra hecha con exito.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Hace falta dinero");
+            }
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -201,6 +210,21 @@ namespace AquiMix
         private void Menu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void tbxEfectivo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            BienvenidaUsuario bienvenidaUsuario = new BienvenidaUsuario();
+            bienvenidaUsuario.Show();
+            this.Hide();
         }
     }
 }

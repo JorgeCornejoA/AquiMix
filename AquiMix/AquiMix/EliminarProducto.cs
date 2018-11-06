@@ -57,7 +57,7 @@ namespace AquiMix
 
         private void BtnRegresar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
 
         private void CbxEliminar_SelectionChangeCommitted(object sender, EventArgs e)

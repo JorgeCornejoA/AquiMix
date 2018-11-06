@@ -97,6 +97,7 @@
             this.Menudgv.ReadOnly = true;
             this.Menudgv.Size = new System.Drawing.Size(454, 349);
             this.Menudgv.TabIndex = 2;
+            this.Menudgv.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Menudgv_MouseMove);
             // 
             // idPlatilloDataGridViewTextBoxColumn
             // 
@@ -130,6 +131,7 @@
             // 
             this.menuBindingSource.DataMember = "Menu";
             this.menuBindingSource.DataSource = this.aquiMixDataSet;
+            this.menuBindingSource.CurrentChanged += new System.EventHandler(this.menuBindingSource_CurrentChanged);
             // 
             // aquiMixDataSet
             // 

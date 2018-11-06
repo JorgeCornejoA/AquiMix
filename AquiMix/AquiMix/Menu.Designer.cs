@@ -74,6 +74,11 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.tbxEfectivo = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbxCambio = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -197,7 +202,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(318, 552);
+            this.label10.Location = new System.Drawing.Point(23, 547);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(79, 28);
             this.label10.TabIndex = 37;
@@ -206,7 +211,7 @@
             // Totaltbx
             // 
             this.Totaltbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Totaltbx.Location = new System.Drawing.Point(415, 549);
+            this.Totaltbx.Location = new System.Drawing.Point(120, 544);
             this.Totaltbx.Name = "Totaltbx";
             this.Totaltbx.ReadOnly = true;
             this.Totaltbx.Size = new System.Drawing.Size(139, 31);
@@ -216,7 +221,7 @@
             // Confirmarbtn
             // 
             this.Confirmarbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Confirmarbtn.Location = new System.Drawing.Point(816, 611);
+            this.Confirmarbtn.Location = new System.Drawing.Point(819, 606);
             this.Confirmarbtn.Name = "Confirmarbtn";
             this.Confirmarbtn.Size = new System.Drawing.Size(121, 33);
             this.Confirmarbtn.TabIndex = 39;
@@ -226,7 +231,7 @@
             // Pagarbtn
             // 
             this.Pagarbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pagarbtn.Location = new System.Drawing.Point(943, 611);
+            this.Pagarbtn.Location = new System.Drawing.Point(946, 606);
             this.Pagarbtn.Name = "Pagarbtn";
             this.Pagarbtn.Size = new System.Drawing.Size(121, 33);
             this.Pagarbtn.TabIndex = 40;
@@ -237,7 +242,7 @@
             // button12
             // 
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(655, 611);
+            this.button12.Location = new System.Drawing.Point(658, 606);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(155, 33);
             this.button12.TabIndex = 41;
@@ -538,11 +543,65 @@
             this.button4.TabIndex = 0;
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // tbxEfectivo
+            // 
+            this.tbxEfectivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxEfectivo.Location = new System.Drawing.Point(397, 544);
+            this.tbxEfectivo.Name = "tbxEfectivo";
+            this.tbxEfectivo.Size = new System.Drawing.Size(139, 31);
+            this.tbxEfectivo.TabIndex = 43;
+            this.tbxEfectivo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxEfectivo_KeyPress);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(281, 547);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 28);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "EFECTIVO";
+            // 
+            // tbxCambio
+            // 
+            this.tbxCambio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxCambio.Location = new System.Drawing.Point(397, 590);
+            this.tbxCambio.Name = "tbxCambio";
+            this.tbxCambio.ReadOnly = true;
+            this.tbxCambio.Size = new System.Drawing.Size(139, 31);
+            this.tbxCambio.TabIndex = 45;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(281, 593);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 28);
+            this.label2.TabIndex = 44;
+            this.label2.Text = "CAMBIO";
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(946, 645);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(121, 33);
+            this.button2.TabIndex = 46;
+            this.button2.Text = "Regresar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1156, 666);
+            this.ClientSize = new System.Drawing.Size(1152, 684);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.tbxCambio);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.tbxEfectivo);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.Pagarbtn);
             this.Controls.Add(this.Confirmarbtn);
@@ -644,5 +703,10 @@
         private System.Windows.Forms.Button Confirmarbtn;
         private System.Windows.Forms.Button Pagarbtn;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.TextBox tbxEfectivo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbxCambio;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace AquiMix
 {
@@ -27,7 +28,7 @@ namespace AquiMix
         {
             BienvenidaUsuario bienvenida = new BienvenidaUsuario();
             bienvenida.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void inventario_Load(object sender, EventArgs e)
@@ -50,6 +51,16 @@ namespace AquiMix
         {
             EliminarProducto eliminar = new EliminarProducto();
             eliminar.Show();
+        }
+
+        private void menuBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+            //nada
+        }
+
+        private void Menudgv_MouseMove(object sender, MouseEventArgs e)
+        {
+            this.menuTableAdapter.Fill(this.aquiMixDataSet.Menu);
         }
     }
 }

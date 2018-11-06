@@ -39,7 +39,7 @@ namespace AquiMix
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
     }
 }
