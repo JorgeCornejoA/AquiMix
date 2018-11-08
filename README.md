@@ -1,2 +1,2 @@
 # AquiMix
-Sistema de Cobro en ASP.NET
+Sistema de Cobro en .NET
