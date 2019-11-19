@@ -1,2 +1,2 @@
 # AquiMix
-Sistema de Cobro en .NET
+Punto de Venta en .NET
